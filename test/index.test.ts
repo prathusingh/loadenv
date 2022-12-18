@@ -1,7 +1,7 @@
-const { tmpdir } = require("os")
-const { join } = require("path")
-const { writeFileSync } = require("fs")
-const { envsLoader } = require("../src/index")
+import { tmpdir } from "os"
+import { join } from "path"
+import { writeFileSync } from "fs"
+import { envsLoader } from "../src/index"
 
 describe("envsLoader", () => {
   let tempDir = ""
