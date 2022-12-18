@@ -30,7 +30,7 @@ describe("envsLoader", () => {
 
     expect(process.env["EXAMPLE_A"]).toEqual("apple")
     expect(process.env["EXAMPLE_B"]).toEqual("bat")
-    example(process.env["EXAMPLE_C"]).toBeUndefined()
+    expect(process.env["EXAMPLE_C"]).toBeUndefined()
   })
 
   it("works with multiple env", () => {
@@ -38,6 +38,6 @@ describe("envsLoader", () => {
 
     expect(process.env["EXAMPLE_A"]).toEqual("astronaut")
     expect(process.env["EXAMPLE_B"]).toEqual("bat")
-    example(process.env["EXAMPLE_C"]).toEqual("cat")
+    expect(process.env["EXAMPLE_C"]).toEqual("cat")
   })
 })
