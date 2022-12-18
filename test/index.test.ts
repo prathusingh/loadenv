@@ -3,8 +3,9 @@ import { join } from "path"
 import { writeFileSync } from "fs"
 import { envsLoader } from "../src/index"
 
+
 describe("envsLoader", () => {
-  let tempDir = ""
+  let tempDir: string = ""
   let fileA = ""
   let fileB = ""
 
