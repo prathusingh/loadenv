@@ -22,6 +22,6 @@ export function envsLoader(...envs: string[]) {
       if (!process.env[key]) {
         process.env[key] = parsedEnv[key]
       }
+    })
   })
-})
 }

@@ -29,16 +29,16 @@ describe("envsLoader", () => {
   it("works with one env", () => {
     envsLoader(fileA)
 
-    expect(process.env["EXAMPLE_A"]).toEqual("apple")
-    expect(process.env["EXAMPLE_B"]).toEqual("bat")
+    expect(process.env["EXAMPLE_A"]).toEqual('apple')
+    expect(process.env["EXAMPLE_B"]).toEqual('bat')
     expect(process.env["EXAMPLE_C"]).toBeUndefined()
   })
 
   it("works with multiple env", () => {
     envsLoader(fileA, fileB)
 
-    expect(process.env["EXAMPLE_A"]).toEqual("astronaut")
-    expect(process.env["EXAMPLE_B"]).toEqual("bat")
-    expect(process.env["EXAMPLE_C"]).toEqual("cat")
+    expect(process.env["EXAMPLE_A"]).toEqual('astronaut')
+    expect(process.env["EXAMPLE_B"]).toEqual('bat')
+    expect(process.env["EXAMPLE_C"]).toEqual('cat')
   })
 })
